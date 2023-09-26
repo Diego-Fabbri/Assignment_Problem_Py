@@ -1,0 +1,8 @@
+Time = 0.06
+Assign worker  0 to task  3  with cost  70
+Assign worker  1 to task  2  with cost  55
+Assign worker  2 to task  1  with cost  95
+Assign worker  3 to task  0  with cost  45
+Objective Function value = 265.0
+Solver Status is = ok
+Termination Condition is = optimal

@@ -1,3 +1,4 @@
+import sys
 import pandas as pd
 import time, numpy as np
 import pyomo.environ as pyo
@@ -50,6 +51,7 @@ deltaT = time.time() - begin
 
 model.pprint()
 
+sys.stdout = open("Assignment_Problem_Results.txt", "w")
 print('Time =', np.round(deltaT,2))
 
 
@@ -70,3 +72,5 @@ else:
     # Something else is wrong
     print ('Solver Status: ',  result.solver.status)
     print('Termination Condition is =', results.solver.termination_condition)
+    
+sys.stdout.close()
