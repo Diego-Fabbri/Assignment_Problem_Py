@@ -47,11 +47,12 @@ begin = time.time()
 opt = SolverFactory('cplex')
 results = opt.solve(model)
 
-deltaT = time.time() - begin
+deltaT = time.time() - begin # Compute Exection Duration
 
 model.pprint()
 
-sys.stdout = open("Assignment_Problem_Results.txt", "w")
+sys.stdout = open("Assignment_Problem_Results.txt", "w") #Print Results on a .txt file
+
 print('Time =', np.round(deltaT,2))
 
 
